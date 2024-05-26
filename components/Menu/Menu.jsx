@@ -8,16 +8,29 @@ const Menu = ({ skills }) => {
         Cardápio
       </h2>
       <section>
-        <main>
+        <main className="flex">
           {ItemsMenu.map((category) => (
             <div key={category.title}>
-              <h3>{category.title}</h3>
-              <ul>
+              <h3 className="text-xl font-bold  m-8">{category.title}</h3>
+
+              <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-8">
                 {category.skills.map((item, index) => (
-                  <li key={index}>
-                    <span>{item.coffee}</span>
-                    <span>{item.ingredients}</span>
-                    <span>{item.price}</span>
+                  <li
+                    className="bg-white flex p-4 rounded-lg shadow-md "
+                    key={index}
+                  >
+                    <img
+                      src={item.img}
+                      alt={item.coffee}
+                      className="w-40 h-40 object-cover rounded-md mb-2"
+                    />
+                    <div className="m-6">
+                      <h3 className="text-lg mb-2 font-semibold">
+                        {item.coffee}
+                      </h3>
+                      <p className="text-gray-600 mb-2 ">{item.ingredients}</p>
+                      <p className="text-gray-800 font-bold">{item.price}</p>
+                    </div>
                   </li>
                 ))}
               </ul>
