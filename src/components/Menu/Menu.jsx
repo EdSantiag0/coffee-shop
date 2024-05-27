@@ -8,11 +8,11 @@ import {
 
 const Menu = ({ skills }) => {
   return (
-    <div>
+    <div className="px-4 md:px-6 lg:px-16">
       <h2 className="text-2xl md:text-5xl font-bold text-center mt-9 mb-6">
         Cardápio
       </h2>
-      <section>
+      <section id="coffee">
         <main className="flex">
           {MenuCoffees.map((category) => (
             <div key={category.title}>
@@ -24,12 +24,15 @@ const Menu = ({ skills }) => {
                     className="bg-white flex p-4 rounded-lg shadow-md "
                     key={index}
                   >
-                    <img
-                      src={item.img}
-                      alt={item.coffee}
-                      className="w-40 h-40 object-cover rounded-md mb-2"
-                    />
-                    <div className="m-6">
+                    <div className="flex-shrink-0">
+                      <img
+                        src={item.img}
+                        alt={item.coffee}
+                        className="w-40 h-40 object-cover rounded-md "
+                      />
+                    </div>
+
+                    <div className="ml flex-grow m-2">
                       <h3 className="text-lg mb-2 font-semibold">
                         {item.coffee}
                       </h3>
@@ -43,8 +46,8 @@ const Menu = ({ skills }) => {
           ))}
         </main>
       </section>
-
-      <section>
+      <hr className="border-t border-gray-300 my-8" />
+      <section id="drinks">
         <main className="flex">
           {MenuDrinks.map((category) => (
             <div key={category.title}>
@@ -56,12 +59,14 @@ const Menu = ({ skills }) => {
                     className="bg-white flex p-4 rounded-lg shadow-md "
                     key={index}
                   >
-                    <img
-                      src={item.img}
-                      alt={item.drink}
-                      className="w-40 h-40 object-cover rounded-md mb-2"
-                    />
-                    <div className="m-6">
+                    <div className="flex-shrink-0">
+                      <img
+                        src={item.img}
+                        alt={item.drink}
+                        className="w-40 h-40 object-cover rounded-md mb-2"
+                      />
+                    </div>
+                    <div className="ml flex-grow m-2">
                       <h3 className="text-lg mb-2 font-semibold">
                         {item.drink}
                       </h3>
@@ -75,8 +80,8 @@ const Menu = ({ skills }) => {
           ))}
         </main>
       </section>
-
-      <section>
+      <hr className="border-t border-gray-300 my-8" />
+      <section id="candy">
         <main className="flex">
           {MenuCandy.map((category) => (
             <div key={category.title}>
@@ -88,12 +93,14 @@ const Menu = ({ skills }) => {
                     className="bg-white flex p-4 rounded-lg shadow-md "
                     key={index}
                   >
-                    <img
-                      src={item.img}
-                      alt={item.candy}
-                      className="w-40 h-40 object-cover rounded-md mb-2"
-                    />
-                    <div className="m-6">
+                    <div className="flex-shrink-0">
+                      <img
+                        src={item.img}
+                        alt={item.candy}
+                        className="w-40 h-40 object-cover rounded-md mb-2"
+                      />
+                    </div>
+                    <div className="ml flex-grow m-2">
                       <h3 className="text-lg mb-2 font-semibold">
                         {item.candy}
                       </h3>
@@ -107,8 +114,8 @@ const Menu = ({ skills }) => {
           ))}
         </main>
       </section>
-
-      <section>
+      <hr className="border-t border-gray-300 my-8" />
+      <section id="savory">
         <main className="flex">
           {MenuSavory.map((category) => (
             <div key={category.title}>
@@ -120,12 +127,14 @@ const Menu = ({ skills }) => {
                     className="bg-white flex p-4 rounded-lg shadow-md "
                     key={index}
                   >
-                    <img
-                      src={item.img}
-                      alt={item.savory}
-                      className="w-40 h-40 object-cover rounded-md mb-2"
-                    />
-                    <div className="m-6">
+                    <div className="flex-shrink-0">
+                      <img
+                        src={item.img}
+                        alt={item.savory}
+                        className="w-40 h-40 object-cover rounded-md mb-2"
+                      />
+                    </div>
+                    <div className="ml flex-grow m-2">
                       <h3 className="text-lg mb-2 font-semibold">
                         {item.savory}
                       </h3>
