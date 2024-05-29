@@ -31,11 +31,6 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <img
-        src="./images/search-icon.svg"
-        alt="Search Icon"
-        className="h-8 w-8"
-      />
     </div>
   );
 };
