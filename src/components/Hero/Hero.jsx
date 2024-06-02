@@ -1,27 +1,32 @@
 import React, { useState, useEffect } from "react";
+import { DateTime } from "luxon";
 
 const Hero = () => {
-  const [bgColor, setBgColor] = useState("bg-green-600");
+  const [closed, setClosed] = useState(false);
 
   useEffect(() => {
-    const checkTime = () => {
-      const now = new Date();
-      const hours = now.getHours();
-      const minutes = now.getMinutes();
+    const checkOpen = () => {
+      const now = DateTime.now();
+      const hours = now.hour;
+      const minutes = now.minute;
 
       const currentTime = hours * 60 + minutes;
       const startTime = 13 * 60 + 30;
       const endTime = 19 * 60;
 
-      if (currentTime < startTime || currentTime > endTime) {
-        setBgColor("bg-red-600");
+      if (
+        now.weekday === 7 ||
+        currentTime < startTime ||
+        currentTime > endTime
+      ) {
+        setClosed(true);
       } else {
-        setBgColor("bg-green-600");
+        setClosed(false);
       }
     };
 
-    checkTime();
-    const intervalId = setInterval(checkTime, 60000);
+    checkOpen();
+    const intervalId = setInterval(checkOpen, 60000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -45,7 +50,9 @@ const Hero = () => {
           Rua ficticia, Gramado - RS
         </span>
         <span
-          className={`${bgColor} px-4 py-1 rounded-l mt-4 text-white font-medium`}
+          className={`${
+            closed ? "bg-red-500" : "bg-green-500"
+          } px-4 py-1 rounded-l mt-4 text-white font-medium`}
           id="date-span"
         >
           Ter a Dom - 13:30 as 19:00
