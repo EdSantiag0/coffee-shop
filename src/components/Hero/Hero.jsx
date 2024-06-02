@@ -29,19 +29,19 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="relative h-[60vh] w-full bg-cover"
+      className="relative h-[60vh] w-full bg-cover font-sans"
       style={{ backgroundImage: "url('./images/bg.png')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col justify-center items-center">
         <img
           src="./images/coffee-cup-main.png"
           alt="Coffe Cup"
-          className="h-60 w-60 mt-5  hover:scale-110 duration-200"
+          className="h-40 w-40 mt-5  hover:scale-110 duration-200"
         />
         <h1 className="text-white text-4xl mt-5 mb-2 font-bold ">
           Coffee Shop
         </h1>
-        <span className="text-white font-medium">
+        <span className="text-white font-medium ">
           Rua ficticia, Gramado - RS
         </span>
         <span

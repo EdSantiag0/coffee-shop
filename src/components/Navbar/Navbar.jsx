@@ -14,19 +14,19 @@ const Navbar = () => {
 
       <ul className="flex space-x-4 ">
         <li>
-          <a href="#home" className="hover:text-yellow-500 mx-4 ">
+          <a href="#home" className="hover:text-yellow-300 mx-4 ">
             Home
           </a>
-          <a href="#coffee" className="hover:text-yellow-500 mx-4">
+          <a href="#coffee" className="hover:text-yellow-300 mx-4">
             Cafés
           </a>
-          <a href="#drinks" className="hover:text-yellow-500 mx-4">
+          <a href="#drinks" className="hover:text-yellow-300 mx-4">
             Drinks
           </a>
-          <a href="#candy" className="hover:text-yellow-500 mx-4">
+          <a href="#candy" className="hover:text-yellow-300 mx-4">
             Doces
           </a>
-          <a href="#savory" className="hover:text-yellow-500 mx-4">
+          <a href="#savory" className="hover:text-yellow-300 mx-4">
             Salgados
           </a>
         </li>
