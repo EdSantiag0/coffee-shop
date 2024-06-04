@@ -53,14 +53,14 @@ const Menu = () => {
       <h2 className="text-2xl md:text-5xl font-bold text-center mt-9 mb-6 font-serif">
         Cardápio
       </h2>
-      <div className="flex flex-wrap justify-center space-x-4 mb-8">
+      <div className="flex flex-wrap justify-center space-x-3 mb-8">
         <button
           onClick={() => setCategoryFilter("all")}
           className={`${
             categoryFilter === "all"
               ? "bg-[rgba(150,109,67,0.8)]"
               : "bg-[rgba(120,60,0,0.8)]"
-          } rounded-lg mt-2 px-2 py-1 font-bold`}
+          } rounded-lg mt-2 px-2 py-1 font-bold w-24 sm:w-32 text-center `}
         >
           Todos
         </button>
@@ -70,7 +70,7 @@ const Menu = () => {
             categoryFilter === "coffees"
               ? "bg-[rgba(150,109,67,0.8)]"
               : "bg-[rgba(120,60,0,0.8)]"
-          } rounded-lg mt-2 px-2 py-1 font-bold `}
+          } rounded-lg mt-2 px-2 py-1 font-bold w-24 sm:w-32 text-center`}
         >
           Cafés
         </button>
@@ -80,7 +80,7 @@ const Menu = () => {
             categoryFilter === "drinks"
               ? "bg-[rgba(150,109,67,0.8)]"
               : "bg-[rgba(120,60,0,0.8)]"
-          } rounded-lg mt-2 px-2 py-1 font-bold `}
+          } rounded-lg mt-2 px-2 py-1 font-bold w-24 sm:w-32 text-center`}
         >
           Bebidas
         </button>
@@ -90,7 +90,7 @@ const Menu = () => {
             categoryFilter === "candy"
               ? "bg-[rgba(150,109,67,0.8)]"
               : "bg-[rgba(120,60,0,0.8)]"
-          } rounded-lg mt-2 px-2 py-1 font-bold `}
+          } rounded-lg mt-2 px-2 py-1 font-bold w-24 sm:w-32 text-center`}
         >
           Doces
         </button>
@@ -100,7 +100,7 @@ const Menu = () => {
             categoryFilter === "savory"
               ? "bg-[rgba(150,109,67,0.8)]"
               : "bg-[rgba(120,60,0,0.8)]"
-          } rounded-lg mt-2 px-2 py-1 font-bold `}
+          } rounded-lg mt-2 px-2 py-1 font-bold w-24 sm:w-32 text-center`}
         >
           Salgados
         </button>
