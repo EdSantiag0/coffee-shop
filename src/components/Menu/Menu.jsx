@@ -53,44 +53,54 @@ const Menu = () => {
       <h2 className="text-2xl md:text-5xl font-bold text-center mt-9 mb-6 font-serif">
         Cardápio
       </h2>
-      <div className="flex justify-center space-x-4 mb-8">
+      <div className="flex flex-wrap justify-center space-x-4 mb-8">
         <button
           onClick={() => setCategoryFilter("all")}
           className={`${
-            categoryFilter === "all" ? "text-blue-500" : "text-gray-500"
-          }`}
+            categoryFilter === "all"
+              ? "bg-[rgba(150,109,67,0.8)]"
+              : "bg-[rgba(120,60,0,0.8)]"
+          } rounded-lg mt-2 px-2 py-1 font-bold`}
         >
           Todos
         </button>
         <button
           onClick={() => setCategoryFilter("coffees")}
           className={`${
-            categoryFilter === "coffees" ? "text-blue-500" : "text-gray-500"
-          }`}
+            categoryFilter === "coffees"
+              ? "bg-[rgba(150,109,67,0.8)]"
+              : "bg-[rgba(120,60,0,0.8)]"
+          } rounded-lg mt-2 px-2 py-1 font-bold `}
         >
           Cafés
         </button>
         <button
           onClick={() => setCategoryFilter("drinks")}
           className={`${
-            categoryFilter === "drinks" ? "text-blue-500" : "text-gray-500"
-          }`}
+            categoryFilter === "drinks"
+              ? "bg-[rgba(150,109,67,0.8)]"
+              : "bg-[rgba(120,60,0,0.8)]"
+          } rounded-lg mt-2 px-2 py-1 font-bold `}
         >
           Bebidas
         </button>
         <button
           onClick={() => setCategoryFilter("candy")}
           className={`${
-            categoryFilter === "candy" ? "text-blue-500" : "text-gray-500"
-          }`}
+            categoryFilter === "candy"
+              ? "bg-[rgba(150,109,67,0.8)]"
+              : "bg-[rgba(120,60,0,0.8)]"
+          } rounded-lg mt-2 px-2 py-1 font-bold `}
         >
           Doces
         </button>
         <button
           onClick={() => setCategoryFilter("savory")}
           className={`${
-            categoryFilter === "savory" ? "text-blue-500" : "text-gray-500"
-          }`}
+            categoryFilter === "savory"
+              ? "bg-[rgba(150,109,67,0.8)]"
+              : "bg-[rgba(120,60,0,0.8)]"
+          } rounded-lg mt-2 px-2 py-1 font-bold `}
         >
           Salgados
         </button>
