@@ -4,20 +4,24 @@ const MenuCategory = ({ title, items }) => {
   return (
     <div>
       <h3 className="text-xl md:text-3xl font-bold mb-4">{title}</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-8">
         {items.map((item, index) => (
-          <div key={index} className="menu-item border rounded-lg p-4">
-            <img
-              src={item.img}
-              alt={item.name}
-              className="w-full h-48 object-cover rounded-lg mb-4"
-            />
-            <h4 className="text-lg font-bold">{item.name}</h4>
-            <p>{item.ingredients}</p>
-            <p className="font-bold">{item.price}</p>
-          </div>
+          <li key={index} className="bg-white flex p-4 rounded-lg shadow-md">
+            <div className="flex-shrink-0">
+              <img
+                src={item.img}
+                alt={item.name}
+                className="w-40 h-40 object-cover rounded-md"
+              />
+            </div>
+            <div className="ml-4 flex-grow">
+              <h3 className="text-lg mb-2 font-semibold">{item.name}</h3>
+              <p className="text-gray-600 mb-2">{item.ingredients}</p>
+              <p className="text-gray-800 font-bold">{item.price}</p>
+            </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };
