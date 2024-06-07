@@ -1,6 +1,15 @@
 # Coffee Shop Menu
 
-<img src="">
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/EdSantiag0/coffee-shop/blob/main/public/images/coffee-shop-demo.png" alt="imagem de demonstração" width="150">
+    </td>
+    <td>
+      <img src="https://github.com/EdSantiag0/coffee-shop/blob/main/public/images/coffee-shop-mobile-demo.png" alt="imagem de demonstração" width="150">
+    </td>
+  </tr>
+</table>
 
 # Description:
 
