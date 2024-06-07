@@ -55,7 +55,7 @@ const Hero = () => {
           } px-4 py-1 rounded-l mt-4 text-white font-medium`}
           id="date-span"
         >
-          Ter a Dom - 13:30 as 19:00
+          Ter à Dom - 13:30 as 19:00
         </span>
       </div>
     </div>

@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Coffee Shop Menu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="">
 
-## Available Scripts
+# Description:
 
-In the project directory, you can run:
+O "Coffe shop Menu" é um projeto inspirado em um Menu para Cafeteria. Criado para aprimorar meus conhecimentos em Tailwind CSS, e simular um desenvolvimento comercial do projeto.
 
-### `npm start`
+"Coffe shop Menu" is a project inspired by a Cafeteria Menu. Created to improve my knowledge in Tailwind CSS, and simulate commercial development of the project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live link:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://coffee-shop-neon-theta.vercel.app/
 
-### `npm test`
+## Techs Used:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js: Biblioteca JavaScript para construção da interface de usuário
+- Tailwind CSS: Framework de CSS para estilização
+- JavaScript (ES6+): Linguagem de programação
+- HTML5: Estrutura do documento
+- ChatGPT: Assistente para auxílio no desenvolvimento e resolução de problemas
 
-### `npm run build`
+## Instruction to run:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone to project:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone https://github.com/EdSantiag0/coffee-shop.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to project folder and install dependencies:
 
-### `npm run eject`
+```
+cd coffee-shop
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Run the project:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm start
+```
 
-## Learn More
+5. The portfolio will be accessible in your browser via the address:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+http://localhost:3000
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Use:
 
-### Code Splitting
+- Navegue pelas categorias usando a barra de navegação ou os botões de filtro.
+- Explore diferentes itens de menu em cada categoria.
+- Em dispositivos móveis, utilize o ícone de hambúrguer para acessar o menu de navegação.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Browse categories using the navigation bar or filter buttons.
+- Explore different menu items in each category.
+- On mobile devices, use the hamburger icon to access the navigation menu.
 
-### Analyzing the Bundle Size
+## Contact:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- E-mail: eduardosantiago_@hotmail.com
 
-### Making a Progressive Web App
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
