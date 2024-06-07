@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td>
-      <img src="https://github.com/EdSantiag0/coffee-shop/blob/main/public/images/coffee-shop-demo.png" alt="imagem de demonstração" width="150">
+      <img src="https://github.com/EdSantiag0/coffee-shop/blob/main/public/images/coffee-shop-demo.png" alt="imagem de demonstração" width="750">
     </td>
     <td>
       <img src="https://github.com/EdSantiag0/coffee-shop/blob/main/public/images/coffee-shop-mobile-demo.png" alt="imagem de demonstração" width="150">
