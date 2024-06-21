@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-[rgba(120,60,0,0.8)] text-white p-4 flex items-center justify-between fixed top-0 w-full h-14 z-10">
+    <div className="dark-brown text-white p-4 flex items-center justify-between fixed top-0 w-full h-14 z-10">
       <div className="flex  items-center">
         <img
           src="./images/coffee-cups-logo.png"
@@ -44,36 +44,11 @@ const Navbar = () => {
         }`}
       >
         <li className="md-flex">
-          <a
-            href="#home"
-            className="hover:text-yellow-300 mx-4 block md:inline"
-          >
-            Home
-          </a>
-          <a
-            href="#coffee"
-            className="hover:text-yellow-300 mx-4 block md:inline"
-          >
-            Cafés
-          </a>
-          <a
-            href="#drinks"
-            className="hover:text-yellow-300 mx-4 block md:inline"
-          >
-            Drinks
-          </a>
-          <a
-            href="#candy"
-            className="hover:text-yellow-300 mx-4 block md:inline"
-          >
-            Doces
-          </a>
-          <a
-            href="#savory"
-            className="hover:text-yellow-300 mx-4 block md:inline"
-          >
-            Salgados
-          </a>
+          <a href="#home">Home</a>
+          <a href="#coffee">Cafés</a>
+          <a href="#drinks">Drinks</a>
+          <a href="#candy">Doces</a>
+          <a href="#savory">Salgados</a>
         </li>
       </ul>
     </div>

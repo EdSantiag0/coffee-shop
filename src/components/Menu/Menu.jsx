@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../App.css";
 import MenuCategory from "./MenuCategory";
 import {
   MenuCoffees,
@@ -27,17 +28,17 @@ const Menu = () => {
               <MenuCategory title="Cafés" items={MenuCoffees} />
             </section>
 
-            <hr className="border-t border-gray-300 my-8" />
+            <hr className="border-t my-8" />
             <section id="drinks">
               <MenuCategory title="Bebidas" items={MenuDrinks} />
             </section>
 
-            <hr className="border-t border-gray-300 my-8" />
+            <hr className="border-t my-8" />
             <section id="candy">
               <MenuCategory title="Doces" items={MenuCandy} />
             </section>
 
-            <hr className="border-t border-gray-300 my-8" />
+            <hr className="border-t my-8" />
             <section id="savory">
               <MenuCategory title="Salgados" items={MenuSavory} />
             </section>
@@ -57,50 +58,40 @@ const Menu = () => {
         <button
           onClick={() => setCategoryFilter("all")}
           className={`${
-            categoryFilter === "all"
-              ? "bg-[rgba(150,109,67,0.8)]"
-              : "bg-[rgba(120,60,0,0.8)]"
-          } rounded-lg mt-2 px-2 py-1 font-bold w-24 sm:w-32 text-center `}
+            categoryFilter === "all" ? "light-brown" : "dark-brown"
+          } btn-custom`}
         >
           Todos
         </button>
         <button
           onClick={() => setCategoryFilter("coffees")}
           className={`${
-            categoryFilter === "coffees"
-              ? "bg-[rgba(150,109,67,0.8)]"
-              : "bg-[rgba(120,60,0,0.8)]"
-          } rounded-lg mt-2 px-2 py-1 font-bold w-24 sm:w-32 text-center`}
+            categoryFilter === "coffees" ? "light-brown" : "dark-brown"
+          } btn-custom`}
         >
           Cafés
         </button>
         <button
           onClick={() => setCategoryFilter("drinks")}
           className={`${
-            categoryFilter === "drinks"
-              ? "bg-[rgba(150,109,67,0.8)]"
-              : "bg-[rgba(120,60,0,0.8)]"
-          } rounded-lg mt-2 px-2 py-1 font-bold w-24 sm:w-32 text-center`}
+            categoryFilter === "drinks" ? "light-brown" : "dark-brown"
+          } btn-custom`}
         >
           Bebidas
         </button>
         <button
           onClick={() => setCategoryFilter("candy")}
           className={`${
-            categoryFilter === "candy"
-              ? "bg-[rgba(150,109,67,0.8)]"
-              : "bg-[rgba(120,60,0,0.8)]"
-          } rounded-lg mt-2 px-2 py-1 font-bold w-24 sm:w-32 text-center`}
+            categoryFilter === "candy" ? "light-brown" : "dark-brown"
+          } btn-custom`}
         >
           Doces
         </button>
         <button
           onClick={() => setCategoryFilter("savory")}
           className={`${
-            categoryFilter === "savory"
-              ? "bg-[rgba(150,109,67,0.8)]"
-              : "bg-[rgba(120,60,0,0.8)]"
-          } rounded-lg mt-2 px-2 py-1 font-bold w-24 sm:w-32 text-center`}
+            categoryFilter === "savory" ? "light-brown" : "dark-brown"
+          } btn-custom`}
         >
           Salgados
         </button>
