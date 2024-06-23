@@ -1,36 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { DateTime } from "luxon";
+import React from "react";
 
-const Hero = () => {
-  const [closed, setClosed] = useState(false);
-
-  useEffect(() => {
-    const checkOpen = () => {
-      const now = DateTime.now();
-      const hours = now.hour;
-      const minutes = now.minute;
-
-      const currentTime = hours * 60 + minutes;
-      const startTime = 13 * 60 + 30;
-      const endTime = 19 * 60;
-
-      if (
-        now.weekday === 7 ||
-        currentTime < startTime ||
-        currentTime > endTime
-      ) {
-        setClosed(true);
-      } else {
-        setClosed(false);
-      }
-    };
-
-    checkOpen();
-    const intervalId = setInterval(checkOpen, 60000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
+const Hero = ({ closed }) => {
   return (
     <div
       id="home"
